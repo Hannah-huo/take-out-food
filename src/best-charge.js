@@ -57,11 +57,11 @@ function calculateDiscount(summary, list, total) {
     if (discount1 > discount2) {
       summary += "使用优惠:\n" +
         p.type;
-      return discount1
+      return discount1;
     } else {
       summary += "使用优惠:\n" +
         p.type + ",省" + discount2 + "元"
-      return discount2
+      return discount2;
     }
   }
   return 0;
