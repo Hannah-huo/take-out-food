@@ -32,7 +32,7 @@ module.exports = function bestCharge(inputs) {
 
 function getDetailSummary(list, priceInfo) {
   let summary = ''
-  let subTotal = 0;
+  let subTotal;
   summary += '============= 订餐明细 =============\n';
   for (let i of list) {
     subTotal = i.count * i.price;
